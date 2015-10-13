@@ -1,0 +1,46 @@
+div.note{
+    min-height: 100px;
+    /*background-image: url(http://thumbs.dreamstime.com/z/square-sticky-note-pink-pin-shadow-white-background-35238065.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100%;*/
+    background-color: #b4e9f3;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+.hide-element{
+    display: none;
+
+}
+input,
+textarea{
+    width: 90%;
+    outline-color: blue;
+    margin: auto;
+}
+h1{
+    font:400 56px/76px 'Indie Flower', cursive;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+
+}
+#header{
+    position:relative;
+    left: 15%;
+    height: 200px;
+    background-image: url(http://images.clipartpanda.com/notebook-clip-art-black-and-white-Notebook.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    margin-top: 3%;
+}
+.main{
+    width: 70%;
+    margin: auto;
+    
+}
+.buttons{
+    margin-top:2%;
+    
+}
