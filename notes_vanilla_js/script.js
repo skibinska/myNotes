@@ -52,12 +52,12 @@ Notes.prototype = {
     _createNoteHtml: function (note) {
         var noteHtml =
             '<div data-note-id="' + note.id + '" data-note-date-created="' + note.date_created + '" data-last-update-created="' + note.date_last_updated + '"class="note">' +
-            '<div><button class="edit-note btn btn-default"><i class="fa fa-pencil-square-o fa-1x"></i> EDIT</button> <button class="delete-note btn btn-default"><i class="fa fa-trash-o fa-1x"></i> DELETE</button></div>' +
-            '<div><span class="creation-date">Created at: ' + note.date_created + '</span><span class="last-update-date">Last updated at: ' + note.date_last_updated + '</span></div>' +
-            '<div><span class="title show">Title: ' + note.title + '</span></div>' +
-            '<div><span class="description show">Description: ' + note.description + '</span></div>' +
-            '<div><span class="title edit hide-element">Title: ' + '<input class="title-input" value="' + note.title + '"/></span></div>' +
-            '<div><span class="description edit hide-element">Description: ' + '<textarea class="description-textarea">' + note.description + '</textarea></span></div>' +
+            '<div class="row"><div class="col-xs-12 col-sm-8"><span class="creation-date"><strong>Created at: </strong>' + note.date_created + '</span><span class="last-update-date"><strong> Last updated at: </strong>' + note.date_last_updated + '</span></div>' +
+            '<div class="col-xs-12 col-sm-4"><button class="edit-note btn btn-default"><i class="fa fa-pencil-square-o fa-1x"></i> EDIT</button> <button class="delete-note btn btn-default"><i class="fa fa-trash-o fa-1x"></i> DELETE</button></div></div>' +
+            '<div><h3 class="title show"><strong>Title: </strong>' + note.title + '</h3></div>' +
+            '<div class="text-justify"><p class="description show"><strong>Description: </strong>' + note.description + '</p></div>' +
+            '<div><span class="title edit hide-element">Title: ' + '<input class="form-control input-lg" value="' + note.title + '"/></span></div>' +
+            '<div><span class="description edit hide-element">Description: ' + '<textarea class="description-textarea form-control" rows="5" ">' + note.description + '</textarea></span></div>' +
             '</div>';
 
         return noteHtml;
